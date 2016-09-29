@@ -5,16 +5,22 @@ layout: default
 
   <header>
     <h1 itemprop="name headline">{{ page.title }}</h1>
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-    {% if page.author %}<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.data.authors[page.author].name | default: page.author }}</span></span>{% endif %}
+
+    <p class="byline"><time itemprop="datePublished">{{ post.date | date: "%d %B, %Y" }}</time>
+    {% if page.author %}by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.data.authors[page.author].name | default: page.author }}</span></span>{% endif %}
+    </p>
+
+    {% if post.tags.size > 0 %}
+    <ul class="tags">
+    {% for tag in post.tags %}
+      <li>{{ tag }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
   </header>
 
   <div class="article-body" itemprop="articleBody">
     {{ page.content }}
   </div>
-
-  <footer>
-    footer?
-  </footer>
 
 </article>

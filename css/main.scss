@@ -1,39 +1,117 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$left-padding: 200px;
 
-$spacing-unit:     30px;
+body {
+    color: black;
+    background: white;
+    font-family: 'Verdana', sans-serif;
+    font-size: 12px;
+    font-size-adjust: none;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    vertical-align: middle;
+    text-align: justify;
+    text-indent: 0;
+    margin: 0;
+    padding: 0;
+}
 
-$text-color:       #000000;
-$background-color: #ffffff;
-$brand-color:      #000088;
+body > header {
+    background: red;
+    margin: 0;
+    padding: 0;
+    padding-left: $left-padding;
+}
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+body > header a {
+    text-decoration: none;
+}
 
-// Width of the content area
-$content-width:    800px;
+body > header > h1 {
+    margin: 0;
+    padding: 0;
+}
 
-$on-palm:          600px;
-$on-laptop:        800px;
+body > header > nav {
+    margin: 0;
+    padding: 0;
+}
 
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+body > header > nav > ul {
+    margin: 0;
+    padding: 0;
+}
 
-// Import partials from the `minima` theme.
-//@import "minima";
+body > header > nav > ul > li {
+    padding: 0 5px;
+    list-style-type: none;
+    display: inline;
+}
+
+body > header > nav > ul > li + li {
+    border-left: 1px solid black;
+}
+
+body > main {
+    width: 800px;
+    left: $left-padding;
+    position: relative;
+}
+
+article {
+    padding: 1em 0;
+/*    border-top: 1px solid black;*/
+}
+
+article > header {
+/*    background: yellow;*/
+}
+
+article > header > h1 {
+    margin: 0;
+}
+
+article > header > h1 > a {
+    text-decoration: none;
+}
+
+article > header > p.byline {
+    margin: 5px 0 0;
+    font-size: 9px;
+    color: rgb(85,85,85);
+}
+
+article > header > ul.tags {
+    margin: 0;
+    padding: 0;
+    font-size: 9px;
+    color: rgb(85,85,85);
+}
+
+article > header > ul.tags:before {
+    content: 'Tags: ';
+}
+
+article > header > ul.tags > li {
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+}
+
+body > footer {
+    background: cyan;
+}
+
+a.read-more {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+}
+
+a.read-more:after {
+    content: '...';
+}
