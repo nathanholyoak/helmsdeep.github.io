@@ -51,12 +51,6 @@ prose:
           element: 'select'
           label: 'Author'
           options: 'https://helmsdeep.github.io/authors.jsonp'
-#            - name: None
-#              value:
-#            - name: Craig Holoak
-#              value: craig
-#            - name: Nathan Holoak
-#              value: nathan
       - name: 'excerpt'
         field:
           element: 'textarea'

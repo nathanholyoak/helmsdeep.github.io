@@ -24,11 +24,11 @@ layout: default
         {% endif %}
       </header>
 
-      {% if post.description %}
-      {{ post.description | markdownify }}
+      {% if post.excerpt %}{% unless post.content contains site.excerpt_separator %}
+      {{ post.excerpt | markdownify }}
       {% else %}
       {{ post.excerpt }}
-      {% endif %}
+      {% endunless %}{% endif %}
 
       <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">read more</a>
 
