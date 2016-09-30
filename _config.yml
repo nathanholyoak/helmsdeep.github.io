@@ -30,3 +30,10 @@ prose:
     - /_layouts
     - /_includes
     - /_data
+  metadata:
+    _posts:
+      - name: 'published'
+        field:
+          element: 'checkbox'
+          value: true
+          label: 'Published'
