@@ -50,3 +50,8 @@ prose:
               value: craig
             - name: Nathan Holoak
               value: nathan
+      - name: 'description'
+        field:
+          element: 'textarea'
+          label: 'Description'
+          placeholder: 'Optional summary of the post'
