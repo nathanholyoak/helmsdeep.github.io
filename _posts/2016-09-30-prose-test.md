@@ -1,7 +1,6 @@
 ---
 published: true
 title: Prose Test
+author: craig
 ---
-## A New Post
-
 This post was created in `prose.io`.
