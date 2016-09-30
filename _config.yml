@@ -17,3 +17,16 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'https://helmsdeep.github.io/'
+  media: 'media'
+  ignore:
+    - index.html
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /_data
