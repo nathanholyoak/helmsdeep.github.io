@@ -1,5 +1,6 @@
 ---
 published: false
+title: Prose Test
 ---
 ## A New Post
 
