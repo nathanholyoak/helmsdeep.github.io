@@ -1,8 +1,8 @@
 ---
 published: true
 title: Prose Test
-description: >-
-  This is a sample description. It _might_ be in markdown format. And have
+excerpt: >-
+  This is a sample description. It _might_ be in markdown format. It can **not** have
   multiple lines.
 ---
 This post was created in `prose.io`.

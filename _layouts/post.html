@@ -7,7 +7,9 @@ layout: default
     <h1 itemprop="name headline">{{ page.title }}</h1>
 
     <p class="byline"><time itemprop="datePublished">{{ page.date | date: "%d %B, %Y" }}</time>
-    {% if page.author %}by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.data.authors[page.author].name | default: page.author }}</span></span>{% endif %}
+    {% if page.author %}{% assign author_data = site.authors | where:"author", page.author %}{% assign author = author_data | first %}
+    by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="{{ author.url | prepend: site.baseurl }}" itemprop="name">{{ author.name | default: page.author }}</a></span>
+    {% endif %}
     </p>
 
     {% if page.tags.size > 0 %}
@@ -19,11 +21,11 @@ layout: default
     {% endif %}
   </header>
 
-  {% if page.description %}
+  {% if page.excerpt %}{% unless page.content contains '<!--more-->' %}
   <div class="article-description" itemprop="description">
-    {{ page.description | markdownify }}
+    {{ page.excerpt | markdownify }}
   </div>
-  {% endif %}
+  {% endunless %}{% endif %}
 
   <div class="article-body" itemprop="articleBody">
     {{ page.content }}

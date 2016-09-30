@@ -102,8 +102,13 @@ article > header > ul.tags > li {
     display: inline;
 }
 
-article > article-description {
-    background: rgb(128,128,128);
+article > .article-description {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+article > p:first-child {
+    background: yellow;
 }
 
 body > footer {

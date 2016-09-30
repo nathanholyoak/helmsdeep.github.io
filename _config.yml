@@ -9,7 +9,9 @@ timezone: Australia/Brisbane
 exclude: [vendor, 'Gemfile*']
 gems: [jekyll-paginate, jekyll-feed]
 paginate: 2
-#paginate_path: "/page:num"
+collections:
+  authors:
+    output: true
 defaults:
   -
     scope:
@@ -17,6 +19,12 @@ defaults:
       type: 'posts'
     values:
       layout: 'post'
+  -
+    scope:
+      path: ''
+      type: 'authors'
+    values:
+      layout: 'author'
 prose:
   rooturl: '_posts'
   siteurl: 'https://helmsdeep.github.io/'
@@ -42,14 +50,14 @@ prose:
         field:
           element: 'select'
           label: 'Author'
-          options:
-            - name: None
-              value:
-            - name: Craig Holoak
-              value: craig
-            - name: Nathan Holoak
-              value: nathan
-      - name: 'description'
+          options: 'https://helmsdeep.github.io/authors.jsonp'
+#            - name: None
+#              value:
+#            - name: Craig Holoak
+#              value: craig
+#            - name: Nathan Holoak
+#              value: nathan
+      - name: 'excerpt'
         field:
           element: 'textarea'
           label: 'Description'
