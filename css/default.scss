@@ -102,6 +102,10 @@ article > header > ul.tags > li {
     display: inline;
 }
 
+article > article-description {
+    background: rgb(128,128,128);
+}
+
 body > footer {
     background: cyan;
 }

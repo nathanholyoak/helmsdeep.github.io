@@ -23,7 +23,7 @@ layout: default
       </header>
 
       {% if post.description %}
-      {{ post.description}}
+      {{ post.description | markdownify }}
       {% else %}
       {{ post.excerpt }}
       {% endif %}

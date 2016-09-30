@@ -19,6 +19,12 @@ layout: default
     {% endif %}
   </header>
 
+  {% if post.description %}
+  <div class="article-description" itemprop="description">
+    {{ post.description | markdownify }}
+  </div>
+  {% endif %}
+
   <div class="article-body" itemprop="articleBody">
     {{ page.content }}
   </div>
