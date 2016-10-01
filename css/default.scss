@@ -50,7 +50,6 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', 'Verdana', sans-serif;
-/*    font-variant: small-caps;*/
     color: rgb(0,0,128);
     padding: 0 10px;
 }
@@ -105,7 +104,7 @@ hr {
 }
 
 p, blockquote, ul, ol, dl {
-    margin: 10px;
+    margin: 10px 0;
     font-size: 100%;
     text-align: justify;
 }
@@ -239,11 +238,12 @@ body > main {
 }
 
 article {
-    padding: 1em 0;
+    padding: 1em;
 }
 
 article > header {
-/*    background: yellow;*/
+    margin: 0 0 1em;
+    padding: 2em;
     text-align: center;
 }
 
@@ -254,9 +254,7 @@ article > header > h1 {
     background: transparent;
     text-align: center;
     padding: 0;
-    padding-top: 0.5em;
     border: 0;
-/*    border-bottom: 2px solid;*/
 }
 
 article > header > h1 > a {
@@ -277,10 +275,11 @@ article > header > p.byline {
 }
 
 article > header > ul.tags {
-    margin: 0;
+    margin: 5px 0;
     padding: 0;
     font-size: 80%;
     color: rgb(85,85,85);
+    display: none;
 }
 
 article > header > ul.tags:before {
@@ -322,8 +321,8 @@ article > p:first-child {
 .article-body > p:first-child:first-letter {
     float: left;
     padding: 0 5px;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 3.5em;
+    line-height: 1;
 }
 
 body > footer {
@@ -346,7 +345,7 @@ img.avatar {
     border: 1px solid black;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 50em) {
     body > header {
         background: blue;
     }
