@@ -1,4 +1,4 @@
-title: Helmsdeep.org
+title: helmsdeep.org
 description: > # this means to ignore newlines until "baseurl:"
   An awesome description.
 url: 'https://helmsdeep.github.io'
@@ -37,6 +37,10 @@ prose:
     - /_data
   metadata:
     _posts:
+      - name: 'date'
+        field:
+          element: 'hidden'
+          value: CURRENT_DATETIME
       - name: 'published'
         field:
           element: 'checkbox'
@@ -46,6 +50,10 @@ prose:
         field:
           element: 'text'
           label: 'Title'
+      - name: 'subtitle'
+        field:
+          element: 'text'
+          label: 'Subtitle'
       - name: 'author'
         field:
           element: 'select'

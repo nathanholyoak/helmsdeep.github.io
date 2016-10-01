@@ -9,9 +9,17 @@ layout: default
       <header>
         <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a></h1>
 
-        <p class="byline"><time itemprop="datePublished">{{ post.date | date: "%d %B, %Y" }}</time>
-        {% if post.author %}{% assign author_data = site.authors | where:"author", post.author %}{% assign author = author_data | first %}
-        by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="{{ author.url | prepend: site.baseurl }}" itemprop="name">{{ author.name | default: post.author }}</a></span>
+        {% if post.subtitle %}<p class="subtitle">{{ post.subtitle }}</p>{% endif %}
+
+        <p class="byline"><time itemprop="datePublished">{{ post.date | date: "%-d %B, %Y" }}</time>
+        {% if post.author %}{% assign author = site.data.authors[post.author] %}
+        by <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        {% assign author_data = site.authors | where:"author", post.author %}{% assign author_page = author_data | first %}{% if author_page.url %}
+        <a href="{{ author_page.url | prepend: site.baseurl }}" itemprop="name">{{ author.name | default: post.author }}</a>
+        {% else %}
+        <span itemprop="name">{{ author.name | default: post.author }}</span>
+        {% endif %}
+        </span>
         {% endif %}
         </p>
 
