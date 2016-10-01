@@ -319,6 +319,13 @@ article > p:first-child {
     background: yellow;
 }
 
+.article-body > p:first-child:first-letter {
+    float: left;
+    padding: 0 5px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
 body > footer {
     background: cyan;
 }
