@@ -23,18 +23,18 @@ layout: default
     <time itemprop="datePublished">{{ page.date | date: "%-d %B, %Y" }}</time>
 
     </p>
-
-    {% if page.tags.size > 0 %}
-    <ul class="tags">
-    {% for tag in page.tags %}
-      <li>{{ tag }}</li>
-    {% endfor %}
-    </ul>
-    {% endif %}
   </header>
 
   <div class="article-body" itemprop="articleBody">
     {{ page.content }}
   </div>
+
+  {% if page.tags.size > 0 %}<footer>
+  <ul class="tags">
+  {% for tag in page.tags %}
+  <li>{{ tag }}</li>
+  {% endfor %}
+  </ul>
+  </footer>{% endif %}
 
 </article>

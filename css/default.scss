@@ -2,19 +2,16 @@
 ---
 @charset "utf-8";
 
-$max-width: 800px;
+$max-width: 60rem;
 
 body {
     color: black;
     background: white;
     font-family: 'Sorts Mill Goudy', Georgia, Times New Roman, Times, serif;
-    font-size: 16px;
-    font-size-adjust: none;
     font-style: normal;
     font-weight: normal;
     font-stretch: normal;
     vertical-align: middle;
-    text-align: justify;
     text-indent: 0;
     margin: 0;
     padding: 0;
@@ -33,7 +30,7 @@ ol {
 }
 
 li {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 }
 
 a {
@@ -53,50 +50,51 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Sorts Mill Goudy', Georgia, Times New Roman, Times, serif;
     color: rgb(0,0,128);
     padding: 0;
-    margin: 1em 0;
+    margin: 1rem 0;
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 2rem;
     background: transparent;
     text-align: left;
     padding: 0;
-    padding-top: 0.5em;
+    padding-top: 0.5rem;
 }
 
 h2 {
-    font-size: 180%;
+    font-size: 1.8rem;
     background: transparent;
     text-align: left;
     padding: 0;
-    padding-top: 0.5em;
+    padding-top: 0.5rem;
 }
 
 h3 {
-    font-size: 160%;
+    font-size: 1.6rem;
     background: transparent;
     text-align: left;
 }
 
 h4 {
-    font-size: 140%;
+    font-size: 1.4rem;
     background: transparent;
     text-align: left;
 }
 
 h5 {
-    font-size: 120%;
+    font-size: 1.2rem;
     background: transparent;
     text-align: left;
 }
 
 h6 {
-    font-size: 100%;
+    font-size: 1rem;
     background: transparent;
     text-align: left;
 }
 
 hr {
+    margin: 3rem auto;
     width: 90%;
     color: rgb(0,0,128);
     border: none;
@@ -104,21 +102,19 @@ hr {
 }
 
 p, blockquote, ul, ol, dl {
-    margin: 1.2em 0;
-    font-size: 100%;
-    text-align: justify;
+    margin: 1.2rem 0;
+    font-size: 1rem;
 }
 
 blockquote {
     font-style: italic;
-    padding: 0 2em;
+    padding: 0 2rem;
 }
 
 blockquote p.attrib {
     text-align: right;
-    font-weight: bold;
     font-style: normal;
-    font-size: 80%;
+    font-size: 0.8rem;
 }
 
 code {
@@ -126,9 +122,13 @@ code {
 }
 
 pre {
-    padding: 1em;
+    padding: 1rem;
     font-family: 'Source Code Pro', monospace;
     background: rgb(225,225,255);
+
+    text-align: left;
+    font-size: 1rem;
+    font-style: normal;
 }
 
 dt {
@@ -136,16 +136,16 @@ dt {
 }
 
 dd {
-    margin-left: 2em;
+    margin-left: 2rem;
 }
 
 td {
     vertical-align: top;
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 
 img {
-    margin: 1em;
+    margin: 1rem;
     border: 1px solid black;
     max-width: 100%;
 }
@@ -155,7 +155,7 @@ img.right {
 }
 
 a.footnote {
-    font-size: 80%;
+    font-size: 0.8rem;
     vertical-align: top;
     font-weight: bold;
 }
@@ -167,7 +167,7 @@ ol.footnotes {
 table {
     table-layout: fixed;
     width: 100%;
-    padding: 1em;
+    padding: 1rem;
 }
 
 table td {
@@ -186,7 +186,7 @@ a.read-more:after {
 
 img.avatar {
     float: left;
-    margin: 1em;
+    margin: 1rem;
     border: 1px solid black;
 }
 
@@ -194,7 +194,6 @@ body > header {
     background: rgb(0,0,128);
     background: url(heading.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center top;
     color: white;
     font-family: 'Open Sans', 'Verdana', sans-serif;
@@ -211,8 +210,8 @@ body > header a {
 }
 
 body > header > h1 {
-    padding: 2em 0 1em;
-    font-size: 3em;
+    padding: 2rem 0 1rem;
+    font-size: 3rem;
     font-variant: none;
     border: 0;
 }
@@ -227,7 +226,7 @@ body > header > nav > ul {
 }
 
 body > header > nav > ul > li {
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
     list-style-type: none;
     display: inline;
 }
@@ -242,18 +241,18 @@ body > main {
 }
 
 article {
-    margin: 0 1em;
+    margin: 0 1rem;
 }
 
 article > header {
-    margin: 0 0 1em;
-    padding: 2em;
+    margin: 0 0 1rem;
+    padding: 2rem;
     text-align: center;
 }
 
 article > header > h1 {
     margin: 0;
-    font-size: 300%;
+    font-size: 3rem;
     font-weight: normal;
     background: transparent;
     text-align: center;
@@ -266,24 +265,31 @@ article > header > h1 > a {
 }
 
 article > header > p.subtitle {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
     font-style: italic;
     text-align: center;
 }
 
 article > header > p.byline {
-    margin: 0.5em 0 0;
-    font-size: 80%;
+    margin: 0.5rem 0 0;
+    font-size: 0.8rem;
     text-align: center;
     color: rgb(85,85,85);
 }
 
-article > header > ul.tags {
-    margin: 0.5em 0;
+article > footer > ul.tags {
+    margin: 0.5rem 0;
     padding: 0;
-    font-size: 80%;
+    font-size: 0.8rem;
     color: rgb(85,85,85);
-    display: none;
+}
+
+article > footer > ul.tags:before {
+    content: 'Tagged in ';
+}
+
+article > footer > ul.tags > li {
+    display: inline;
 }
 
 article > header > ul.tags:before {
@@ -296,6 +302,10 @@ article > header > ul.tags > li {
     display: inline;
 }
 
+.index {
+    padding-top: 1rem;
+}
+
 .index > article > header {
     text-align: left;
     margin: 0;
@@ -303,19 +313,19 @@ article > header > ul.tags > li {
 }
 
 .index > article > header > h1 {
-    font-size: 200%;
+    font-size: 2rem;
     text-align: left;
 }
 
 .index > article > header > p.subtitle {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
     font-style: italic;
     text-align: left;
 }
 
 .index > article > header > p.byline {
     margin: 0;
-    font-size: 80%;
+    font-size: 0.8rem;
     text-align: left;
     color: rgb(85,85,85);
 }
@@ -324,18 +334,52 @@ article > p:first-child {
     background: yellow;
 }
 
+aside {
+    font-style: italic;
+    margin: 0 2rem;
+}
+
+aside > p {
+    font-size: 1.5rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+figure > img {
+    display: block;
+    margin: 0 auto 0.5rem;
+    max-width: 80%;
+}
+
+.left {
+    float: left;
+    max-width: 50%;
+}
+
+.right {
+    float: right;
+    max-width: 50%;
+}
+
 .article-body > p:first-of-type:first-letter {
     float: left;
-    padding: 0 5px;
-    font-size: 4em;
+    padding: 0 0.3rem;
+    font-size: 4rem;
     line-height: 1.1;
+    margin-bottom: -1rem;
 }
 
 .article-body > hr + p:first-letter {
     float: left;
-    padding: 0 5px;
-    font-size: 4em;
+    padding: 0 0.3rem;
+    font-size: 4rem;
     line-height: 1.1;
+    margin-bottom: -1rem;
 }
 
 body > footer {
@@ -353,18 +397,36 @@ body > footer {
 }
 
 .pagination {
-    margin: 1em;
+    margin: 1rem;
     text-align: center;
 }
 
 img.avatar {
     float: left;
-    margin: 1em;
+    margin: 1rem;
     border: 1px solid black;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 40rem) {
     body > header {
         background: blue;
+    }
+}
+
+@media print {
+    body > header {
+        display: none;
+    }
+
+    body > footer {
+        display: none;
+    }
+
+    article > footer > ul.tags {
+        display: none;
+    }
+
+    code, pre {
+        font-family: monospace;
     }
 }
