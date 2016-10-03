@@ -471,8 +471,18 @@ ul.contributors > li > img {
 }
 
 @media (max-width: 640px) {
-    body > header {
-        background: blue;
+    article {
+        margin: 0 0.2em;
+    }
+
+    .left {
+        float: none;
+        max-width: 100%;
+    }
+
+    .right {
+        float: none;
+        max-width: 100%;
     }
 }
 

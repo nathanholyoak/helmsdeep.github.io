@@ -22,6 +22,9 @@ Phasellus elementum accumsan ipsum quis fermentum. Interdum et malesuada fames a
 
 <aside markdown="1" class="right">
 Quisque eget fringilla metus. Aliquam at _pellentesque_ odio, eget dictum mauris. Donec nec dui ac augue aliquet fringilla. Fusce mauris lectus, consectetur vitae metus vitae, sodales hendrerit sapien. Suspendisse vehicula elit vel pellentesque auctor. Pellentesque vulputate ante vel magna ornare, ac laoreet nisi fringilla. Cras eu mauris risus. Suspendisse potenti.
+
+some attribution
+{: .attrib}
 </aside>
 
 Duis eu ante facilisis, fringilla enim eu, dignissim erat. Curabitur elementum velit faucibus, ullamcorper sapien varius, dictum odio. Integer id vestibulum nunc, eget pretium dui. Nam eget velit consequat, ultricies velit finibus, bibendum orci. Vivamus fringilla accumsan leo sed imperdiet. Nullam sed odio odio. Fusce eget vestibulum purus, sit amet elementum libero. Integer cursus vel tortor in dictum. Nulla aliquet sollicitudin nibh, sit amet bibendum elit gravida vel. Ut mauris quam, tincidunt sed cursus eget, posuere et nibh.
