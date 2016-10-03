@@ -8,7 +8,7 @@ markdown: kramdown
 timezone: Australia/Brisbane
 exclude: [vendor, 'Gemfile*']
 gems: [jekyll-paginate, jekyll-feed]
-paginate: 2
+paginate: 5
 collections:
   authors:
     output: true
