@@ -113,7 +113,7 @@ hr {
 
 p, blockquote, ul, ol, dl {
     margin: 1.2rem 0;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 blockquote {
@@ -121,10 +121,10 @@ blockquote {
     padding: 0 2rem;
 }
 
-blockquote p.attrib {
+.attrib {
     text-align: right;
     font-style: normal;
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 
 code {
@@ -373,11 +373,8 @@ article > footer > ul.tags {
 
 aside {
     font-style: italic;
-    margin: 0 2rem;
-}
-
-aside > p {
     font-size: 1.5rem;
+    margin: 0 2rem;
 }
 
 figure {
