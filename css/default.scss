@@ -6,6 +6,8 @@ $max-width: 50rem;
 
 $hr_width: 90%;
 
+$line_height: 1.7rem;
+
 $heading_color: rgb(87,94,76);
 $link_color: rgb(199,75,32);
 $link_hover_color: rgb(200,0,0);
@@ -20,6 +22,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-stretch: normal;
+    line-height: $line_height;
     vertical-align: middle;
     text-indent: 0;
     margin: 0;

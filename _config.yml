@@ -12,6 +12,7 @@ paginate: 5
 collections:
   authors:
     output: true
+    permalink: /:collection/:path/
 defaults:
   -
     scope:
