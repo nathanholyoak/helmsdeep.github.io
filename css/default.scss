@@ -2,7 +2,14 @@
 ---
 @charset "utf-8";
 
-$max-width: 60rem;
+$max-width: 50rem;
+
+$heading_color: rgb(87,94,76);
+$link_color: rgb(199,75,32);
+$link_hover_color: rgb(200,0,0);
+$link_visited_color: $link_color;
+$metadata_color: rgb(113,110,103);
+$code_color: rgb(225,225,255);
 
 body {
     color: black;
@@ -35,20 +42,23 @@ li {
 
 a {
     background: transparent;
-    color: rgb(0,0,128);
+    color: $link_color;
     text-decoration: none;
+}
+
+a:visited {
+    color: $link_visited_color;
 }
 
 a:hover {
     background: transparent;
-    color: rgb(200,0,0);
+    color: $link_hover_color;
     text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', 'Verdana', sans-serif;
     font-family: 'Sorts Mill Goudy', Georgia, Times New Roman, Times, serif;
-    color: rgb(0,0,128);
+    color: $heading_color;
     padding: 0;
     margin: 1rem 0;
 }
@@ -96,7 +106,7 @@ h6 {
 hr {
     margin: 3rem auto;
     width: 90%;
-    color: rgb(0,0,128);
+    color: $heading_color;
     border: none;
     border-bottom: 1px solid;
 }
@@ -124,8 +134,7 @@ code {
 pre {
     padding: 1rem;
     font-family: 'Source Code Pro', monospace;
-    background: rgb(225,225,255);
-
+    background: $code_color;
     text-align: left;
     font-size: 1rem;
     font-style: normal;
@@ -191,12 +200,11 @@ img.avatar {
 }
 
 body > header {
-    background: rgb(0,0,128);
+    background: $heading_color;
     background: url(heading.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     color: white;
-    font-family: 'Open Sans', 'Verdana', sans-serif;
 }
 
 body > header > * {
@@ -206,7 +214,17 @@ body > header > * {
 
 body > header a {
     text-decoration: none;
+    font-weight: bold;
     color: white;
+}
+
+body > header a:visited {
+    color: white;
+}
+
+body > header a:hover {
+    text-decoration: none;
+    color: $link_hover_color;
 }
 
 body > header > h1 {
@@ -218,6 +236,7 @@ body > header > h1 {
 
 body > header > nav {
     padding: 0;
+    text-align: right;
 }
 
 body > header > nav > ul {
@@ -274,14 +293,14 @@ article > header > p.byline {
     margin: 0.5rem 0 0;
     font-size: 0.8rem;
     text-align: center;
-    color: rgb(85,85,85);
+    color: $metadata_color;
 }
 
 article > footer > ul.tags {
     margin: 0.5rem 0;
     padding: 0;
     font-size: 0.8rem;
-    color: rgb(85,85,85);
+    color: $metadata_color;
 }
 
 article > footer > ul.tags:before {
@@ -317,6 +336,10 @@ article > header > ul.tags > li {
     text-align: left;
 }
 
+.index > article > header > h1 a {
+    color: $heading_color;
+}
+
 .index > article > header > p.subtitle {
     margin: 0.5rem 0;
     font-style: italic;
@@ -327,11 +350,25 @@ article > header > ul.tags > li {
     margin: 0;
     font-size: 0.8rem;
     text-align: left;
-    color: rgb(85,85,85);
+    color: $metadata_color;
+}
+
+.index > article > header > ul.tags {
+    margin: 0.5rem 0;
+    padding: 0;
+    font-size: 0.8rem;
+    color: $metadata_color;
 }
 
 article > p:first-child {
     background: yellow;
+}
+
+article > footer > ul.tags {
+    margin: 0.5rem 0;
+    padding: 0;
+    font-size: 0.8rem;
+    color: $metadata_color;
 }
 
 aside {
@@ -401,13 +438,39 @@ body > footer {
     text-align: center;
 }
 
+.pagination > a {
+    margin: 0 1rem;
+}
+
 img.avatar {
     float: left;
     margin: 1rem;
     border: 1px solid black;
 }
 
-@media (max-width: 40rem) {
+a.twitter {
+}
+
+a.twitter > img {
+    margin: 0;
+    border: 0;
+}
+
+ul.contributors {
+    padding: 0;
+}
+
+ul.contributors > li {
+    list-style-type: none;
+    margin: 2rem 0;
+}
+
+ul.contributors > li > img {
+    margin: 0 1rem 0 0;
+    display: inline;
+}
+
+@media (max-width: 640px) {
     body > header {
         background: blue;
     }
@@ -428,5 +491,29 @@ img.avatar {
 
     code, pre {
         font-family: monospace;
+    }
+
+    .pagination, .read-more {
+        display: none;
+    }
+
+    figure {
+        page-break-inside: avoid;
+    }
+
+    .article-body > p:first-of-type {
+        page-break-inside: avoid;
+    }
+
+    .article-body > hr + p {
+        page-break-inside: avoid;
+    }
+
+    .article-body > p:first-of-type:first-letter {
+        page-break-before: avoid;
+    }
+
+    .article-body > hr + p:first-letter {
+        page-break-before: avoid;
     }
 }
