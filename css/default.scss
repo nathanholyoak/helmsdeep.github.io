@@ -263,6 +263,7 @@ body > header > nav > ul > li + li {
 body > main {
     max-width: $max-width;
     margin: 0 auto;
+    display: block;
 }
 
 article {
