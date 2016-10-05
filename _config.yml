@@ -13,6 +13,10 @@ collections:
   authors:
     output: true
     permalink: /:collection/:path/
+  recipes:
+    output: true
+    permalink: /:collection/:title.html
+    title: Recipes
 defaults:
   -
     scope:
@@ -26,6 +30,12 @@ defaults:
       type: 'authors'
     values:
       layout: 'author'
+  -
+    scope:
+      path: ''
+      type: 'recipes'
+    values:
+      layout: 'recipe'
 prose:
   rooturl: '_posts'
   siteurl: 'https://helmsdeep.github.io/'
