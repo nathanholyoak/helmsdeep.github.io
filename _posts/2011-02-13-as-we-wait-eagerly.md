@@ -6,6 +6,7 @@ tags:
 - Bible
 - Christian Living
 modified_time: '2011-07-16T08:26:28.540+10:00'
+excerpt: In a time of instant gratification, we risk losing the discipline of patience. This is rarely more true than in our anticipation of the fulfilment of God's promises. Yet patience and hope go hand in hand.
 ---
 It was just over 150 years ago that Queensland's first telegram network was first used. With our modern technology, it's hard to imagine just how revolutionary this was, to send a message and actually expect it to be received the same day. Now we expect everything to be instantaneous. We can watch a sporting event live on the other side of the planet. We can order an airline ticket and have it sitting in our email before we have time to look. It almost seems that something like patience is rapidly becoming a quaint product of a bygone era.
 
