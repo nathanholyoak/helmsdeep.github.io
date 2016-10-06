@@ -1,12 +1,12 @@
 title: helmsdeep.org
-description: > # this means to ignore newlines until "baseurl:"
-  An awesome description.
+description: >
+  "Through a glass darkly…"
 url: 'https://helmsdeep.github.io'
 permalink: /:year/:month/:title.html
-excerpt_separator: <!--more-->
+excerpt_separator: "\n\n"
 markdown: kramdown
 timezone: Australia/Brisbane
-exclude: [vendor, 'Gemfile*']
+exclude: ['Gemfile*']
 gems: [jekyll-paginate, jekyll-feed]
 paginate: 5
 collections:
@@ -46,6 +46,8 @@ prose:
     - /_layouts
     - /_includes
     - /_data
+    - rss.xml
+    - authors.jsonp
   metadata:
     _posts:
       - name: 'date'

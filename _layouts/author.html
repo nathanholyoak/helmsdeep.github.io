@@ -18,7 +18,7 @@ layout: default
 <article>
 <header>
 <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a></h1>
-<p class="byline"><time itemprop="datePublished">{{ post.date | date: "%-d %B, %Y" }}</time></p>
+<p class="byline"><time itemprop="datePublished" datetime="{{ post.date | date_to_rfc822 }}">{{ post.date | date: "%-d %B, %Y" }}</time></p>
 </header>
 </article>
 {% endfor %}

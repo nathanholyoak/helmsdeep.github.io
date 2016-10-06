@@ -31,16 +31,16 @@ Duis eu ante facilisis, fringilla enim eu, dignissim erat. Curabitur elementum v
 
 Donec neque ante, ullamcorper vel dolor eget, blandit porta lacus. Sed luctus auctor quam ut faucibus. Nam rhoncus posuere velit quis dictum. Vestibulum eu eleifend eros. Nulla erat ex, pellentesque at laoreet ut, pharetra a ex. Sed eleifend ornare massa, sed egestas nisl rutrum sed. Nulla euismod quis ex vel porttitor. Aliquam erat volutpat. Nullam consequat viverra elementum. Proin feugiat sagittis quam, id ullamcorper eros congue in. Aenean scelerisque purus at ante facilisis imperdiet. Cras sem metus, bibendum sed tristique a, porttitor condimentum orci. Etiam pellentesque, libero id maximus mollis, turpis odio varius lorem, sed lacinia ex erat in justo. Duis vulputate condimentum orci. Integer interdum fermentum malesuada.
 
-<figure markdown="span">
+<figure markdown="block">
 ![sample.jpg]({{site.baseurl}}/media/sample.jpg)
-<figcaption>This might be a caption.</figcaption>
+<figcaption markdown="span">This might be a --- caption.</figcaption>
 </figure>
 
 Suspendisse a ex iaculis, euismod diam sit amet, pulvinar risus. Nunc vulputate augue ac augue iaculis aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec eget nibh ut nisl laoreet gravida in a libero. Pellentesque ut pellentesque elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum urna nec lectus cursus dictum. Ut gravida condimentum velit, non dictum ante congue ac. Pellentesque auctor nec lacus quis efficitur. Curabitur molestie tempor bibendum. Donec porta ullamcorper velit, at facilisis neque hendrerit eu. Duis tincidunt nisi ornare, finibus sem eu, pellentesque nisl. Aliquam erat volutpat. Nullam dictum tortor orci, sed sagittis odio dignissim quis.
 
 Donec viverra molestie rhoncus. Maecenas ac orci a libero scelerisque lobortis. Suspendisse malesuada luctus laoreet. Nulla auctor mi id ullamcorper dapibus. Vestibulum ut dapibus magna, sit amet iaculis ipsum. Nulla vel dolor nunc. Donec sit amet egestas nisi. Nulla ullamcorper, mi ut bibendum malesuada, nibh sapien vulputate elit, id sollicitudin arcu est eu eros. Nulla vulputate eget erat et suscipit. Aenean blandit euismod mi in interdum. Praesent sit amet pellentesque ipsum.
 
-<figure markdown="span" class="left">
+<figure markdown="block" class="left">
 ![sample.jpg]({{site.baseurl}}/media/sample.jpg)
 This might be a caption.
 </figure>
@@ -55,7 +55,7 @@ In hendrerit molestie lectus id ornare. Ut varius, eros et viverra dapibus, risu
 
 Nam pharetra massa libero, et volutpat metus efficitur ac. Vivamus iaculis sollicitudin velit. Vestibulum et pulvinar augue. Nullam quis tellus sapien. Curabitur tincidunt sapien sit amet massa maximus, a pellentesque dui viverra. Vivamus tellus massa, placerat eu fermentum eu, pharetra nec lacus. Vestibulum fringilla ipsum vel dictum aliquet. In dapibus et turpis quis facilisis. Donec ante dolor, tempus nec varius in, venenatis semper ex. Duis volutpat justo ut fringilla tempus. Curabitur sed leo at sem dapibus mollis vitae ut nunc. Vestibulum sed nisl urna. Aenean malesuada finibus gravida. Nullam sed ligula vestibulum, tincidunt neque nec, fermentum nunc.
 
-![sample.jpg]({{site.baseurl}}/media/sample.jpg)
+![sample.jpg]({{site.baseurl}}/media/sample.jpg "Some caption")
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan placerat nulla eget tempor. Nullam id lorem ornare, viverra turpis ut, aliquet quam. Nam eleifend a metus non semper. Donec ex diam, finibus et odio quis, aliquet malesuada felis. Vivamus egestas, libero quis aliquet commodo, mi nisl sodales ligula, sit amet sagittis sapien lorem non nisi. Phasellus commodo efficitur elit, sed pretium lectus mollis et. Suspendisse mattis lectus sit amet ultrices convallis. Ut vel velit sed mauris tristique vestibulum. Nam ex lectus, maximus porta lectus vitae, congue aliquam augue. Sed dictum mi ac orci condimentum, quis rhoncus enim ullamcorper. Aliquam erat volutpat.
 
