@@ -3,12 +3,13 @@ description: >
   "Through a glass darkly…"
 url: 'https://helmsdeep.github.io'
 permalink: /:year/:month/:title.html
-excerpt_separator: "\n\n"
+excerpt_separator: "\n\n\n"
 markdown: kramdown
 timezone: Australia/Brisbane
 exclude: ['Gemfile*']
 gems: [jekyll-paginate, jekyll-feed]
 paginate: 5
+paginate_path: "/page/:num/"
 collections:
   authors:
     output: true
