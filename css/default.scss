@@ -232,9 +232,15 @@ body > header a:hover {
 
 body > header > h1 {
     padding: 2rem 0 1rem;
+    font-family: 'Oswald';
     font-size: 3rem;
     font-variant: none;
     border: 0;
+    text-shadow: 1px 1px 1px black;
+}
+
+body > header > h1 > a:hover {
+    color: white;
 }
 
 body > header > nav {
