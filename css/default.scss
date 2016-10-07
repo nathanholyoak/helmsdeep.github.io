@@ -232,8 +232,9 @@ body > header a:hover {
 
 body > header > h1 {
     padding: 2rem 0 1rem;
+    padding: 3rem 0 2rem;
     font-family: 'Oswald';
-    font-size: 3rem;
+    font-size: 2rem;
     font-variant: none;
     border: 0;
     text-shadow: 1px 1px 1px black;
@@ -294,7 +295,7 @@ article > header > h1 > a {
 }
 
 article > header > p.subtitle {
-    margin: 0.5rem 0;
+    margin: 1.5rem 0 0.5rem;
     font-style: italic;
     text-align: center;
 }
@@ -368,6 +369,20 @@ article > header > ul.tags > li {
     padding: 0;
     font-size: 0.8rem;
     color: $metadata_color;
+}
+
+.index > h1 {
+    margin: 1.5rem 0 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.index > article.h-recipe {
+    margin: 0;
+}
+
+.index > article.h-recipe > p {
+    margin: 0;
 }
 
 article > footer > ul.tags {
