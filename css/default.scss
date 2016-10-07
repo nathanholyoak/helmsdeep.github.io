@@ -370,10 +370,6 @@ article > header > ul.tags > li {
     color: $metadata_color;
 }
 
-article > p:first-child {
-    background: yellow;
-}
-
 article > footer > ul.tags {
     margin: 0.5rem 0;
     padding: 0;
@@ -418,11 +414,11 @@ figure > figcaption {
     max-width: 50%;
 }
 
-.article-body hr {
+.body hr {
     margin: 3rem auto;
 }
 
-.article-body > p:first-of-type:first-letter {
+.body > p:first-of-type:first-letter {
     float: left;
     padding: 0 0.3rem;
     font-size: 4rem;
@@ -430,7 +426,7 @@ figure > figcaption {
     margin-bottom: -1rem;
 }
 
-.article-body > hr + p:first-letter {
+.body > hr + p:first-letter {
     float: left;
     padding: 0 0.3rem;
     font-size: 4rem;
@@ -543,19 +539,19 @@ ul.contributors > li > img {
         page-break-inside: avoid;
     }
 
-    .article-body > p:first-of-type {
+    .body > p:first-of-type {
         page-break-inside: avoid;
     }
 
-    .article-body > hr + p {
+    .body > hr + p {
         page-break-inside: avoid;
     }
 
-    .article-body > p:first-of-type:first-letter {
+    .body > p:first-of-type:first-letter {
         page-break-before: avoid;
     }
 
-    .article-body > hr + p:first-letter {
+    .body > hr + p:first-letter {
         page-break-before: avoid;
     }
 }
