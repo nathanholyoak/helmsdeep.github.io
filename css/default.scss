@@ -202,12 +202,6 @@ a.read-more:after {
     content: '...';
 }
 
-img.avatar {
-    float: left;
-    margin: 1rem;
-    border: 1px solid black;
-}
-
 body > header {
     background: $heading_color;
     background: url(heading.jpg);
@@ -476,7 +470,7 @@ body > footer * {
 
 img.avatar {
     float: left;
-    margin: 1rem;
+    margin: 0 1rem 1rem;
     border: 1px solid black;
 }
 
