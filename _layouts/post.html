@@ -20,7 +20,7 @@ layout: default
     </span><br/>
     {% endif %}
 
-    <time itemprop="datePublished" datetime="{{ page.date | date_to_rfc822 }}">{{ page.date | date: "%-d %B, %Y" }}</time>
+    <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B, %Y" }}</time>
 
     </p>
   </header>
